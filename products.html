@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaming Paradise</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+    <script>
+        
+        function addToCart(itemName, itemPrice, itemImage) {
+        // Create an object representing the item
+        var newItem = {
+            name: itemName,
+            price: itemPrice,
+            image: itemImage
+        };
+
+        // Get the current cart items from local storage
+        var cartItems = JSON.parse(localStorage.getItem('cart')) || [];
+
+        // Add the new item to the cart
+        cartItems.push(newItem);
+
+        // Save the updated cart back to local storage
+        localStorage.setItem('cart', JSON.stringify(cartItems));
+
+        // Display a confirmation message (you can customize this part)
+        alert('Item added to cart!');
+
+        // You can redirect to the cart page or perform other actions as needed
+    }
+    </script>
+    
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="https://tecroot.lk/wp-content/uploads/2023/02/TecRoot_Logo_Horizontal_2-e1675356582242.png" alt="TecRoot" class="img-header-logo" width="200" height="100">
+            
+            </a>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+            <ul class="navbar-nav ml-auto">
+                
+                <li class="nav-item"><a class="nav-link" href="#">Home </a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Products</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Contacts</a></li>
+                <li class="nav-item"><a class="nav-link" href="m">Signout</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+
+    <div class="nav">
+        <a href="#" class="nav1-item">
+          <i class="icon-merch"></i>
+          Accesories
+        </a>
+        <a href="#" class="nav1-item">
+          <i class="icon-video-games"></i>
+          Audio
+      </a>
+      <a href="#" class="nav1-item">
+          <i class="icon-video-games"></i>
+        Gaming Consoles</a>
+      <a href="#" class="nav1-item">
+          <i class="icon-video-games"></i>
+          Video Games</a>
+      </div>
+
+  
+<div class="majith">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="custom-card-bg">
+                <a href="description.html">
+                <img src="images/gam1.png" class="card-img-top" alt="Game 1">
+                <div class="card-body">
+                    <h5 class="card-title">NANO XE REPUBLIC GAMERS II</h5>
+                    <p class="card-text">1,921,500 LKR</p>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <a href="checkout.html" class="btn btn-warning">Buy Now</a>
+                    <a href="#" class="fa fa-shopping-cart" onclick="addToCart('NANO XE NEO I GAMING', 1921500, 'images/game%203.png')"></a>
+
+
+                </div>
+            </a>
+            </div>
+         
+        </div>
+        <div class="col-md-4">
+            <div class="custom-card-bg">
+                <a href="description2.html">
+                <img src="images/game2.png" class="card-img-top" alt="Game 2">
+                <div class="card-body">
+                    <h5 class="card-title">NANO XE TUF GAMING II</h5>
+                    <p class="card-text">Gaming Desktops</p>
+                    <p class="card-text">175000 LKR</p>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <a href="#" class="btn btn-warning">Buy Now</a>
+                    <a href="#" class="fa fa-shopping-cart" onclick="addToCart('NANO XE TUF GAMING II', 1921500)"></a>
+                    
+                </div>
+            </div>
+        </a>
+        </div>
+        <div class="col-md-4">
+            <div class="custom-card-bg">
+                <a href="description3.html">
+                <img src="images/game 3.png" class="card-img-top" alt="Game 3">
+                <div class="card-body">
+                    <h5 class="card-title">NANO XE NEO I GAMING</h5>
+                    <p class="card-text">Gaming Desktops</p>
+                    <p class="card-text">175000 LKR</p>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <a href="#" class="btn btn-warning">Buy Now</a>
+                    <a href="#" class="fa fa-shopping-cart" onclick="addToCart('NANO XE NEO I GAMING', 1921500)"></a>
+                </div>
+            </div>
+        </div>
+    </a>
+    </div>
+
+
+    <div class="row">
+        <div class="col-md-4">
+            <div class="custom-card-bg">
+                <img src="images/l1.png" class="card-img-top" alt="Game 1">
+                <div class="card-body">
+                    <h5 class="card-title">NANO XE REPUBLIC GAMERS II</h5>
+                    <p class="card-text">Gaming Desktops</p>
+                    <p class="card-text">1,921,500 LKR</p>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <a href="#" class="btn btn-warning">Buy Now</a>
+                    <a href="#" class="fa fa-shopping-cart"></a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="custom-card-bg">
+                <img src="images/l2.png" class="card-img-top" alt="Game 2">
+                <div class="card-body">
+                    <h5 class="card-title">NANO XE TUF GAMING</h5>
+                    <p class="card-text">Gaming Desktops</p>
+                    <p class="card-text">175000 LKR</p>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <a href="#" class="btn btn-warning">Buy Now</a>
+                    <a href="#" class="fa fa-shopping-cart"></a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="custom-card-bg">
+                <img src="images/l5.png" class="card-img-top" alt="Game 3">
+                <div class="card-body">
+                    <h5 class="card-title">NANO XE GAMING</h5>
+                    <p class="card-text">Gaming Desktops</p>
+                    <p class="card-text">175000 LKR</p>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <a href="#" class="btn btn-warning">Buy Now</a>
+                    <a href="#" class="fa fa-shopping-cart"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="custom-card-bg">
+                <img src="images/l4.png" class="card-img-top" alt="Game 1">
+                <div class="card-body">
+                    <h5 class="card-title">ASUS ROG-THOR 1200 PLATINUM II 1200W 80+ PLATINUM FULL MODULAR</h5>
+                    <p class="card-text">ASUS-ROG</p>
+                    <p class="card-text">1,921,500 LKR</p>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <a href="#" class="btn btn-warning">Buy Now</a>
+                    <a href="#" class="fa fa-shopping-cart"></a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="custom-card-bg">
+                <img src="images/l7.png" class="card-img-top" alt="Game 1">
+                <div class="card-body">
+                    <h5 class="card-title">ASUS ROG-THOR 1200 PLATINUM II 1200W 80+ PLATINUM FULL MODULAR</h5>
+                    <p class="card-text">ASUS-ROG</p>
+                    <p class="card-text">1,921,500 LKR</p>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <a href="#" class="btn btn-warning">Buy Now</a>
+                    <a href="#" class="fa fa-shopping-cart"></a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="custom-card-bg">
+                <img src="images/l6.png" class="card-img-top" alt="Game 1">
+                <div class="card-body">
+                    <h5 class="card-title">ASUS ROG-THOR 1200 PLATINUM II 1200W 80+ PLATINUM FULL MODULAR</h5>
+                    <p class="card-text">ASUS-ROG</p>
+                    <p class="card-text">1,921,500 LKR</p>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <a href="#" class="btn btn-warning">Buy Now</a>
+                    <a href="#" class="fa fa-shopping-cart"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="page-btn">
+        <span>1</span>
+        <span>2</span>
+        <span>3</span>
+        <span>4</span>
+        <span>&#8594; </span>
+    </div>
+</div>
+</div>
+       
+
+</body>
+
+</html>

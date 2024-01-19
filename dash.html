@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce Admin Dashboard</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #444;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #555;
+            color: #fff;
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        input, button {
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>E-commerce Admin Dashboard</h1>
+    </header>
+    
+    <nav>
+        <a href="#">Products</a>
+        <a href="#">Orders</a>
+        <a href="#">Customers</a>
+    </nav>
+
+    <section>
+        <h2>Product Management</h2>
+
+        <table>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Stock</th>
+            </tr>
+            <!-- Display products dynamically from the backend -->
+            <tr>
+                <td>1</td>
+                <td>Product 1</td>
+                <td>$19.99</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Product 2</td>
+                <td>$29.99</td>
+                <td>30</td>
+            </tr>
+            <!-- Add more product rows as needed -->
+        </table>
+
+        <form>
+            <label for="productName">Product Name:</label>
+            <input type="text" id="productName" name="productName" required>
+
+            <label for="productPrice">Product Price:</label>
+            <input type="text" id="productPrice" name="productPrice" required>
+
+            <label for="productStock">Product Stock:</label>
+            <input type="text" id="productStock" name="productStock" required>
+
+            <button type="button" onclick="addProduct()">Add Product</button>
+        </form>
+    </section>
+
+    <script>
+        function addProduct() {
+            // Logic to add product to the backend and update the table
+            // This would involve making an API call to the server
+            // For simplicity, let's just display an alert for now
+            alert('Product added successfully!');
+        }
+    </script>
+</body>
+</html>

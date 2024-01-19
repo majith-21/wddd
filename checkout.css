@@ -1,0 +1,107 @@
+body {
+  background-color: rgb(71, 69, 69);
+  color: orange;
+ 
+  height: 2px;
+  line-height: 10px;
+  
+  
+}
+
+.h1 {
+  text-align: center;
+  
+}
+
+.label-1 {
+  color: #f59313;
+  padding-left: 26%; /* Adjusted for responsiveness */
+  line-height: 2px;
+  font-weight: bold;
+ margin-left: 100px;
+ 
+}
+
+.Inp-1 {
+  background-color: rgb(206, 203, 203);
+  border: none;
+  height: 20px;
+  border-radius: 4px;
+  width: 50%; /* Adjusted for responsiveness */
+  color: #f59313;
+  
+}
+
+.Inp-1:hover {
+  background-color: rgb(240, 240, 89);
+}
+
+h2 {
+  
+  margin-top: 60px;
+  margin-bottom: 30px;
+  font-size: 20px;
+  border-color: beige;
+}
+
+.pay-1 {
+  line-height: 20px;
+}
+
+.pt-1 {
+  background-color: rgb(231, 142, 26);
+  color: white;
+  height: 30px;
+  width: 40%; 
+  border: none;
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 20px;
+margin-left: 6%;
+  
+}
+
+.pt-1:hover {
+  background-color: rgb(62, 181, 221);
+  transition: background-color 1s;
+}
+
+.but-2 {
+  background-color: #f59313;
+  border-radius: 20px;
+  border: none;
+  font-weight: bold;
+  height: 30px;
+  margin-left: 60px;
+}
+
+.but-2:hover {
+  background-color: rgb(96, 170, 235);
+  transition: background-color 1s;
+}
+
+.Button-2 {
+  text-align: center;
+  align-items: center; 
+  line-height: 50px;
+  
+}
+
+.Circle-1 {
+  height: 70px;
+  border-radius: 50%; 
+  width: 70px;
+  border: none;
+  background-color: rgb(221, 138, 29);
+  color: rgb(212, 212, 212);
+  font-weight: bold;
+  box-shadow: 10px 10px 10px black;
+  
+}
+
+.cir-1 {
+  text-align: center;
+  padding-left: 47%;
+  background-color: #f5931349;
+  
+}

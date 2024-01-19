@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=YourFontFamilyHere">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<style>
+    body {
+
+        background-image: url(images/maj.avif);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        width: min(100%, 950px);
+        height: 100%;
+        margin: 0 auto;
+        padding: 10px;
+    }
+
+    h1 {
+        color: rgb(196, 106, 17);
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    .container {
+        font-size: 20px;
+        font-weight: bold;
+        margin-top: 5%;
+    }
+
+    p {
+        color: rgba(29, 224, 198, 0.603);
+        font-family: 'Roboto', sans-serif;
+        font-size: 14px;
+    }
+
+    .Cre {
+        margin-right: 5px;
+        color: rgba(255, 251, 12, 0.644);
+    }
+
+    .paypal,
+    .credit {
+        margin-top: 10px;
+        color: rgb(0, 0, 0);
+        height: 40px;
+        width: 100%;
+        border-radius: 4px;
+        border: none;
+        background-color: rgba(255, 255, 255, 0.5);
+        padding-top: 15px;
+    }
+
+    .credit:hover,
+    .paypal:hover {
+        background-color: rgb(160, 131, 38);
+    }
+
+    .icons {
+        font-size: 40px;
+        padding-top: 30px;
+        text-align: end;
+    }
+
+    .per {
+        font-family: 'Roboto', sans-serif;
+        font-size: 14px;
+        color: rgba(233, 233, 48, 0.562);
+    }
+
+    .email,
+    .First,
+    .Last,
+    .no-1,
+    .no-2,
+    .no-3 {
+        height: 40px;
+        border-radius: 40px 0px 50px 50px;
+        border: 1px solid rgb(255, 255, 254);
+        text-indent: 10px;
+        width: 50%;
+        box-sizing: border-box;
+        margin-bottom: 10px;
+        
+    }
+
+    .email,
+    .First,
+    .Last {
+        background-color: rgb(160, 177, 175);
+        
+    }
+
+    .email:hover,
+    .Last:hover,
+    .First:hover,
+    .no-1:hover,
+    .no-2:hover,
+    .no-3:hover {
+
+        background-color: rgba(241, 248, 248, 0.493);
+    }
+
+    .no-1,
+    .no-2,
+    .no-3 {
+        background-color: rgb(160, 177, 175);
+    }
+
+    @media (min-width: 600px) {
+
+        .container {
+            margin-left: 10%;
+        }
+    }
+
+    .card {
+        display: flex;
+        gap: 10px;
+
+    }
+
+    .button-1 {
+        height: 40px;
+        width: 150px;
+        border: 1px solid rgb(129, 127, 127);
+        border-radius: 0px 0px 20px 21px;
+        background-color: rgba(0, 102, 255, 0.918);
+        margin-left: 38%;
+        margin-top: 10px;
+        font-weight: bold;
+        color: white;
+        font-size: 20px;
+    }
+
+    .button-1:hover {
+        background-color: rgba(42, 140, 165, 0.425);
+    }
+</style>
+
+<body>
+    <h1>Payment</h1>
+    <div class="container">
+        <p>All transactions are secured and encrypted. <br>Make your payments Faster</p>
+        <div class="credit">
+            <input class="Cre" type="radio"> PayPal
+            <div class="icons">
+                <i class="fa fa-cc-visa"></i>
+                <i class="fa fa-cc-mastercard"></i>
+                <i class="fa fa-cc-amex"></i>
+            </div>
+        </div>
+
+        <div class="paypal">
+            <input type="radio"> Credit Card
+        </div>
+
+        <div class="per">
+            <p class="p-1"></p> Fill in your personal information</p>
+
+        </div>
+        <div class="new">
+            <input class="First" type="text" placeholder="First Name">
+            <input class="Last" type="text" placeholder="Last Name">
+            <input class="email" type="text" placeholder="Email">
+            <div class="card">
+                <input class="no-1" type="text" placeholder="Card number">
+                <input class="no-2" type="text" placeholder="CVC">
+                <input class="no-3" type="text" placeholder="Expiry">
+            </div>
+        </div>
+
+        <button class="button-1"> Pay Now</button>
+    </div>
+
+</body>
+
+</html>
